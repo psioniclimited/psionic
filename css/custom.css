@@ -1,0 +1,508 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Hanlding Updates
+    -----------------------------------------------------------------*/
+/*
+Makes images container to occupy some space 
+when the images aren't loaded yet.
+This value depends on your layout.
+*/
+.imageList li {
+    min-height: 300px;
+}
+/*
+Avoid empty images to appear as broken
+*/
+img:not([src]):not([srcset]) {
+    visibility: hidden;
+}
+/* 
+Fixes Firefox anomaly during images load time 
+*/
+@-moz-document url-prefix() {
+    img:-moz-loading {
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+.custom-page-section-what-we-do {
+    padding: 20px 0;
+}
+
+.custom-section-our-works {
+    position: relative;
+    margin: 30px 0;
+    padding: 30px 0;
+    background-color: #F9F9F9;
+    overflow: hidden;
+}
+
+/* ----------------------------------------------------------------
+    Fonts
+
+    Replace your Fonts as necessary
+    -----------------------------------------------------------------*/
+
+
+body,
+small,
+#primary-menu ul ul li > a,
+.wp-caption,
+.feature-box.fbox-center.fbox-italic p,
+.skills li .progress-percent .counter,
+.nav-tree ul ul a,
+.font-body,
+.entry-meta li,
+.entry-link span,
+.entry blockquote p,
+.more-link,
+.comment-content .comment-author span,
+.button.button-desc span,
+.testi-content p,
+.team-title span,
+.before-heading,
+.wedding-head .first-name span,
+.wedding-head .last-name span,
+.font-secondary { font-family: 'Open Sans', sans-serif !important; }
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#logo,
+#primary-menu ul li > a,
+#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a,
+#top-search form input,
+.entry-link,
+.entry.entry-date-section span,
+.button.button-desc,
+.counter,
+label,
+.nav-tree li a,
+.wedding-head .first-name,
+.wedding-head .last-name,
+.testi-content p,
+.font-primary { font-family: 'Poppins', sans-serif !important; }
+
+.before-heading {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.ls1 {
+    letter-spacing: 0px !important;
+}
+
+.before-heading {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+#slide-section-header {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 42px;
+}
+
+.portfolio-overlay .portfolio-desc h3 {
+    /*font-size: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif !important;*/
+
+    font-size: 19px;
+    font-weight: 700;
+    /*text-transform: uppercase;*/
+    letter-spacing: 0.8px;
+    font-family: 'Poppins', sans-serif !important;
+    line-height: 25px;
+}
+
+.portfolio-overlay .portfolio-desc h3 {
+    text-transform: none;
+}
+
+.portfolio-overlay .portfolio-desc span {
+    margin-top: 12px;
+    text-transform: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+
+
+/* Font size */
+
+.heading-block h3 {
+    font-size: 28px;
+}
+
+.feature-box h3 {
+    font-size: 18px;
+}
+
+.feature-box h3 span.subtitle {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+#primary-menu ul li a {
+    font-size: 14px;
+}
+
+#digital-marketing-image img {
+    margin-left: -100px;
+}
+
+#sub-header-body {
+    font-size: 16px;
+}
+
+.portfolio-filter.style-2 li a, .portfolio-filter.style-3 li a, .portfolio-filter.style-4 li a {
+    font-size: 16px;
+}
+
+#video-header {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 58px;
+}
+
+.parallax .testimonial .testi-content p {
+    font-size: 16px;
+}
+
+#person-name {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+#company {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.what-we-do-list {
+    margin-left: 22px;
+}
+
+/* Change color */
+
+.button-link:hover {
+    color: #54aced;
+}
+
+.portfolio-overlay .portfolio-desc h3 a {
+    /*color: #54aced !important;*/
+    color: #fff !important;
+    text-shadow: none;
+}
+
+.portfolio-overlay .portfolio-desc span a {
+    color: #fff !important;
+    text-shadow: none;
+}
+
+/* Custom line */
+.custom-line {
+    clear: both;
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+    border-top: 1px solid #EEE;
+}
+
+/* Fix testimonail section, starts here */
+#section-testimonials {
+    background: url('../demos/business/images/sections/2.jpg') no-repeat center center / cover;
+    /*background-position: 50% 50% !important;*/
+}
+
+/* Remove border on what-we-do */
+.feature-box.media-box.fbox-bg .fbox-desc {
+    border: none;
+}
+
+/* Contact */
+#address-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444444;
+}
+
+address {
+    line-height: 1.8;
+}
+
+.si-colored-custom {
+    background-color: #54aced;
+}
+.si-colored-custom i:last-child {
+    color: #FFF !important;
+}
+
+.portfolio-overlay a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: transparent;
+    width: 40px !important;
+    height: 40px !important;
+    margin: -28px 0 0 -44px;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    color: #444;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+}
+
+
+#oc-clients .oc-item img {
+    height: 85px;
+    width:151px;
+}
+
+/* header */
+#header.transparent-header.sticky-header .container #primary-menu ul li > a,
+#header.transparent-header.sticky-header .container #top-search a,
+#header.transparent-header.sticky-header .container #top-search form input {
+    /*color: #666;*/
+}
+
+#primary-menu ul li > a {
+    /*color: #fff;*/
+    /*font-size: 15px;*/
+}
+
+.hide-watermark {
+    width: 600px;
+    height: 20px;
+    /*margin-top: -50px;*/
+    background: #000;
+    z-index: 1000;
+    position: relative;
+}
+
+
+.swiper-slide .custom-cover-slide01 {
+    position: absolute;
+    width: 100%;
+    transform-origin: left center;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transition: all 7s ease-in-out;
+    -webkit-transition: all 7s ease-in-out;
+    -moz-transition: all 7s ease-in-out;
+}
+.swiper-slide .custom-cover-slide02 {
+    position: absolute;
+    width: 100%;
+    transform-origin: top;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transition: all 9s ease-in-out;
+    -webkit-transition: all 9s ease-in-out;
+    -moz-transition: all 9s ease-in-out;
+}
+.swiper-slide .custom-cover-slide03 {
+    position: absolute;
+    width: 100%;
+    transform-origin: 100% 30%;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transition: all 12s ease-in-out;
+    -webkit-transition: all 12s ease-in-out;
+    -moz-transition: all 12s ease-in-out;
+}
+
+/*.slider-caption h2 {*/
+    /*text-transform: none;*/
+    /*z-index: 13;*/
+    /*white-space: nowrap;*/
+    /*font-size: 65px;*/
+    /*line-height: 73px;*/
+    /*font-weight: 400;*/
+    /*color: rgb(255, 255, 255);*/
+    /*font-family: Poppins !important;*/
+    /*visibility: inherit;*/
+    /*transition: none 0s ease 0s;*/
+    /*text-align: inherit;*/
+    /*border-width: 0px;*/
+    /*margin: 0px;*/
+    /*padding: 0px;*/
+    /*letter-spacing: 0px;*/
+    /*min-height: 0px;*/
+    /*min-width: 0px;*/
+    /*max-height: none;*/
+    /*max-width: none;*/
+    /*opacity: 1;*/
+    /*transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);*/
+    /*transform-origin: 50% 50% 0px;*/
+/*}*/
+.swiper-pagination span {
+    border: 1px solid rgb(6, 122, 182);
+}
+.swiper-pagination span:hover, .swiper-pagination span.swiper-pagination-bullet-active {
+    background-color: rgb(6, 122, 182)!important;
+}
+.slider-caption p {
+    text-transform: none !important;
+}
+.slider-arrow-left, .slider-arrow-right, .owl-carousel-full .owl-nav [class*=owl-] {
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.flex-next, .flex-prev, .slider-arrow-bottom-sm, .slider-arrow-left, .slider-arrow-right, .slider-arrow-top-sm {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    top: 50%;
+    left: 0;
+    margin-top: -26px;
+    background-color: rgba(0,0,0,.3);
+    width: 52px;
+    height: 52px;
+    border: 0;
+    border-radius: 0 3px 3px 0;
+    -webkit-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+}
+.slider-arrow-left i, .slider-arrow-right i {
+    font-size: 34px;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.flex-next i, .flex-prev i, .slider-arrow-bottom-sm i, .slider-arrow-left i, .slider-arrow-right i, .slider-arrow-top-sm i {
+    line-height: 50px;
+    width: 34px;
+    height: 52px;
+    color: #ddd;
+    color: rgba(255,255,255,.8);
+    text-shadow: 1px 1px 1px rgba(0,0,0,.1);
+    font-size: 34px;
+    text-align: center;
+    margin-left: 7px;
+}
+.flex-next, .slider-arrow-right, .slider-element .owl-next {
+    left: auto;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.swiper-slide.swiper-slide-active .slider-caption .custom-cover-slide01-header, .slider-caption:not(.dark) .custom-cover-slide01-header,
+.slider-caption .custom-cover-slide01-paragraph:not(.dark) {
+    color: #5E5F63 !important;
+}
+
+@media (min-width: 1199px){
+    .slider-caption.slider-caption-center {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {}
+
+/* Fix testimonail section, ends here */
+
+/*** Responsive settings start here ***/
+
+@media (max-width: 1199px) {
+    #digital-marketing-image img {
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #primary-menu ul li a {
+        font-size: 11px;
+    }
+    .slider-caption h2 {
+        font-size: 44px;
+    }
+    .swiper-slide .custom-cover-slide01,
+    .swiper-slide .custom-cover-slide02,
+    .swiper-slide .custom-cover-slide03 {
+        transform: scale(2);
+        -webkit-transform: scale(2);
+        -moz-transform: scale(2);
+    }
+    #header, #header-wrap, #logo img {
+    height: 60px;
+}
+#logo a.standard-logo {
+    display: block;
+    margin-top: 10px;
+}
+}
+
+@media (max-width: 991px) {
+    /* Change font color */
+    #primary-menu ul li > a{
+        /*color: #666;*/
+    }
+    #primary-menu .one-page-menu.d-block {
+        display: inherit !important;
+    }
+    #header.full-header:not(.border-full-header):not(.sticky-header) #header-wrap {
+    border-bottom: 1px solid #eee;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .slider-caption h2 {
+        font-size: 44px;
+    }
+    .swiper-slide .custom-cover-slide01,
+    .swiper-slide .custom-cover-slide02,
+    .swiper-slide .custom-cover-slide03 {
+        transform: scale(3);
+        -webkit-transform: scale(3);
+        -moz-transform: scale(3);
+    }
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .slider-arrow-right, .slider-arrow-left {
+        display: none;
+    }
+}
+
+@media (max-width: 479px) {
+    .swiper_wrapper .slider-caption h2 {
+        font-size: 18px;
+    }
+    .slider-arrow-right, .slider-arrow-left {
+        display: none;
+    }
+}
+
+/*** Responsive settings end here ***/
